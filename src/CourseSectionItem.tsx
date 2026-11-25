@@ -4,6 +4,14 @@ import {useState} from "react";
 export default function CourseSectionItem() {
   const [isOpen, setIsOpen] = useState(false);
 
+  // let isOpen: boolean = true;
+  //
+  // function setIsOpen(newValue: boolean) {
+  //   console.log("Function is being called: " + isOpen)
+  //   isOpen = newValue;
+  //   console.log("Function has been called: " + isOpen)
+  // }
+
   return <div className="select-none">
     <div className="flex flex-row justify-between items-center h-16 px-5" onClick={() => setIsOpen(!isOpen)}>
       <h1 className="text-[24px] text-[#F7F9FA] font-bold">1. Asosiy donalar</h1>
